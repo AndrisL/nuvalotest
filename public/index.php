@@ -8,6 +8,13 @@
  */
 
 define('LARAVEL_START', microtime(true));
+/*
+  exec("sh ../composerRun.sh", $output);
+  echo '<pre>';
+  print_r($output);
+  echo '</pre>';
+  exit();
+ */
 
 /*
 |--------------------------------------------------------------------------

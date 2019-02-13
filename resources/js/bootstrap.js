@@ -10,9 +10,12 @@ window._ = require('lodash');
 try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
-
+    window.chosen = require('chosen-js');
+    window.jqueryDatepicker = require('jquery-ui/ui/widgets/datepicker.js');    
+    jqueryDatepicker($);
     require('bootstrap');
-} catch (e) {}
+} catch (e) {
+}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -43,6 +46,7 @@ if (token) {
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
+
 
 // import Echo from 'laravel-echo'
 
